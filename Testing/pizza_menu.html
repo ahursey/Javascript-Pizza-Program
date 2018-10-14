@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<title>Piece-a-&#928 Pizza</title>
+  </head>
+  
+  
+  <body>
+	
+	<!--Pizza Size Radios-->
+		<form>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="size" onclick="mySizeFunction(this.value)" value="6">Personal<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="size" onclick="mySizeFunction(this.value)" value="10">Medium<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="size" onclick="mySizeFunction(this.value)" value="14">Large<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="size" onclick="mySizeFunction(this.value)" value="16">Extra Large<br>
+			</div>
+		</form>
+	<!--/Pizza Size Radios-->
+	
+	<!--Pizza Price Display-->	
+		Price of pizza selected: $<input type="text" id="Pizza_Size">
+		<br>
+	<!--/Pizza Price Display-->
+
+	<!--Script for Pizza Size/Price-->
+		<script>
+			function mySizeFunction(size) {
+				document.getElementById("Pizza_Size").value = size;
+			}
+		</script>
+	<!--/Script for Pizza Size/Price-->
+	
+	<!--Meat Topping Checkboxes-->
+		Meat Toppings Section
+	<!--Meat Topping Checkboxes-->
+	
+	
+	<!--Cheese Radios-->
+		<form>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="cheese" onclick="myCheeseFunction(this.value)" value="0">Regular<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="cheese" onclick="myCheeseFunction(this.value)" value="0">No Cheese<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="cheese" onclick="myCheeseFunction(this.value)" value="3">Extra Cheese<br>
+			</div>
+		</form>
+	<!--/Cheese Radios-->
+	
+	<!--Cheese Price Display-->	
+		Extra price of cheese selected: $<input type="text" id="Cheese_Selection">
+		<br>
+	<!--/Cheese Price Display-->
+
+	<!--Script for Cheese/Price-->
+		<script>
+			function myCheeseFunction(cheese) {
+				document.getElementById("Cheese_Selection").value = cheese;
+			}
+		</script>
+	<!--/Script for Cheese/Price-->
+	
+	<!--Crust Radios-->
+		<form>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="crust" onclick="myCrustFunction(this.value)" value="0">Plain<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="crust" onclick="myCrustFunction(this.value)" value="0">Garlic Butter<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="crust" onclick="myCrustFunction(this.value)" value="3">Cheese-Stuffed<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="crust" onclick="myCrustFunction(this.value)" value="0">Spicy<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="crust" onclick="myCrustFunction(this.value)" value="0">House Special<br>
+			</div>
+		</form>
+	<!--/Crust Radios-->
+	
+	<!--Crust Price Display-->	
+		Extra price of crust selected: $<input type="text" id="Crust_Selection">
+		<br>
+	<!--/Crust Price Display-->
+
+	<!--Script for Crust/Price-->
+		<script>
+			function myCrustFunction(crust) {
+				document.getElementById("Crust_Selection").value = crust;
+			}
+		</script>
+	<!--/Crust Script Price-->
+	
+	<!--Sauce Radios-->
+		<form>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="sauce" onclick="mySauceFunction(this.value)" value="Marinara">Marinara<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="sauce" onclick="mySauceFunction(this.value)" value="White Sauce">White Sauce<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="sauce" onclick="mySauceFunction(this.value)" value="BBQ">BBQ<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="radio" name="sauce" onclick="mySauceFunction(this.value)" value="No Sauce">No Sauce<br>
+			</div>
+		</form>
+	<!--/Sauce Radios-->
+
+	<!--Veggie Topping Radios-->
+		<form id="veggie">
+			<div class="form-check form-check-inline">
+			  <input type="checkbox" name="veggie" onclick="myVeggieFunction(this.value)" value="1">Tomato<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="checkbox" name="veggie" onclick="myVeggieFunction(this.value)" value="1">Onion<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="checkbox" name="veggie" onclick="myVeggieFunction(this.value)" value="1">Olive<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="checkbox" name="veggie" onclick="myVeggieFunction(this.value)" value="1">Green Peppers<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="checkbox" name="veggie" onclick="myVeggieFunction(this.value)" value="1">Mushrooms<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="checkbox" name="veggie" onclick="myVeggieFunction(this.value)" value="1">Pineapple<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="checkbox" name="veggie" onclick="myVeggieFunction(this.value)" value="1">Spinach<br>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input type="checkbox" name="veggie" onclick="myVeggieFunction(this.value)" value="1">Jalapeno<br>
+			</div>
+		</form>
+	<!--/Veggie Topping Radios-->
+	
+	<!--Veggie Price Display-->	
+		Extra price of veggies selected: $<input type="text" id="Veggie_Selection">
+		<br>
+	<!--/Veggie Price Display-->
+
+	<!--Script for Veggie/Price-->
+		<script>
+			function myVeggieFunction(veggie) {
+				document.getElementById("Veggie_Selection").value = veggie;
+				}
+		</script>
+	<!--/Script for Veggie/Price-->
+	
+	<!--Order Card-->
+	<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src="./images/pizza.png" alt="Card image cap">
+	  <div class="card-body">
+		<h5 class="card-title">Order Summary</h5>
+		<p class="card-text">Below is a summary of your order. Hit "Order Now" to complete your order!</p>
+	  </div>
+	  <ul class="list-group list-group-flush">
+		<li class="list-group-item">Pizza Size: </li>
+		<li class="list-group-item">Meat Toppings: </li>
+		<li class="list-group-item">Cheese Selection: </li>
+		<li class="list-group-item">Crust Selection: </li>
+		<li class="list-group-item">Sauce Selection: </li>
+		<li class="list-group-item">Veggie Toppings: </li>
+	  </ul>
+	  <div class="card-body">
+		<a href="#" class="card-link">Order Now</a>
+	  </div>
+	</div>
+	<!--/Order Card-->
+	
+	
+	
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	</body>
+</html>
